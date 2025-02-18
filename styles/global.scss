@@ -1,0 +1,98 @@
+/* ==============================
+    Global CSS Reset
+   ============================== */
+
+ :root {
+  --primary-color: rgba(227, 116, 37, 1); /* Orange */
+  --primary-color-dark: rgb(134, 70, 24); /* Brown */
+  --bg-color: #ffffff; /* Dark background */
+  --card-bg: #181818; /* Slightly lighter dark for contrast */
+  --text-color: #0F0F0F; /* White text */
+  --secondary-text: #dddddd; /* Lighter gray text */
+  --accent-color: rgba(227, 116, 37, 1); /* Gold for ratings/icons */
+  --border-color: #333333;
+  --input-bg: #222222;
+  --input-text: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+
+  --font-main: 'Poppins', sans-serif;
+  --font-size-base: 1.6rem;  /* 16px */
+  --font-size-title: 2rem;   /* 20px */
+  --font-size-small: 1.4rem; /* 14px */
+}
+
+/* Box-sizing: Consistent sizing for all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Set base font and smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  font-size: calc(16px * .625);
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Default body styles */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  text-rendering: optimizeSpeed;
+}
+
+/* Responsive media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove default button styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Reset input, textarea, and button */
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+}
+
+/* Improve focus styles for accessibility */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:focus, button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Code block styling */
+pre, code {
+  font-family: "Fira Code", monospace;
+  background: #f5f5f5;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Remove animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
