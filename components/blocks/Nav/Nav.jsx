@@ -1,11 +1,17 @@
 import React from 'react';
 import Logo from '@/components/elements/Logo/Logo';
-import NavItem from '@/components/elements/NavItem/NavItem';
 import SiteLogo from '@/public/logo.avif';
 import { Button } from '@/components/elements/Button';
+import NavList from '@/components/modules/NavList/NavList';
 
 
 const Nav = () => {
+  const navItems = [
+    {href: '/about', route: 'About'},
+    {href: '/rooms', route: 'Rooms'},
+    {href: '/culinary', route: 'Culinary'},
+  ]
+
   return (
     <>
       <nav>
@@ -14,18 +20,7 @@ const Nav = () => {
           href={'/'}
         />
         <section>
-          <ul>
-            {navItems.map((item, id) => {
-              <li
-                key={`nav-item-${id}`}
-              >
-                <NavItem
-                  href={item.href}
-                  route={item.route}
-                />
-              </li>
-            })}
-          </ul>
+          <NavList navItems={navItems} />
           <Button.CTA 
             href={'/availabity-check'}
             callToAction={'Book Now'}

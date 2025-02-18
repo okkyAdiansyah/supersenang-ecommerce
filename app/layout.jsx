@@ -19,17 +19,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const navItems = [
-    {href: '/about', route: 'About'},
-    {href: '/rooms', route: 'Rooms'},
-    {href: '/culinary', route: 'Culinary'},
-  ]
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Nav 
-          navItems={navItems}
-        />
+        <Nav />
         {children}
       </body>
     </html>
