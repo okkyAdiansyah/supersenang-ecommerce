@@ -7,7 +7,7 @@ jest.mock("../../elements/Toggle/NavToggle/NavToggle", () => jest.fn(
     ({onClick}) => <button type="button" onClick={onClick} data-testid="nav-toggle"></button>
 ));
 
-jest.mock("../../Modules/Navlist/Navlist", () => jest.fn(
+jest.mock("../../modules/Navlist/Navlist", () => jest.fn(
     ({className}) => <div data-testid="nav-list" className={className}></div>
 ))
 
