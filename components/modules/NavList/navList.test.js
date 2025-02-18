@@ -2,7 +2,6 @@ import React from "react";
 import { screen, render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { faker } from "@faker-js/faker/.";
-import NavItem from "../../elements/NavItem/NavItem";
 import NavList from "./NavList";
 
 jest.mock("../../elements/NavItem/NavItem", () => jest.fn(
